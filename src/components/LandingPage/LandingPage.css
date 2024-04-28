@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     height: 85vh; /* This makes the landing page cover the full viewport height */
-    overflow: auto; /* Allows scrolling within the landing page if content overflows */
+    overflow: hidden; /* Allows scrolling within the landing page if content overflows */
 }
 
 @keyframes fadeIn {
