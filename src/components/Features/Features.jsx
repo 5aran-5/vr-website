@@ -40,6 +40,15 @@ const Features = () => {
         };
     }, []);
 
+    useEffect(() => {
+        const titles = document.querySelectorAll('.feature-content h1');
+        titles.forEach(title => {
+            const words = title.textContent.split(' ');
+            const lastWord = words.pop();
+            title.innerHTML = words.join(' ') + ' <span class="last-word">' + lastWord + '</span>';
+        });
+    }, []);
+
 
     return (
         <section className="features">
