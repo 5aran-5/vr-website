@@ -88,11 +88,12 @@
     height: 100%;
     overflow: hidden;
     animation: imageSlideIn 1s ease-out forwards;
+    border-radius: 60px;
 }
 
 .image-content img {
     height: 100%;
     width: 100%;
     object-fit: cover; /* This ensures the image covers the entire div, cropping if necessary */
-    border-radius: 5px;
+    border-radius: 20px;
 }
