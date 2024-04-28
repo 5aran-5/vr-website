@@ -1,0 +1,81 @@
+.footer {
+  background: transparent;
+  color: white;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.fbar {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.flogo{
+    display: flex;
+    flex-direction: row;
+}
+
+.vr-logo {
+  width: 50px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Space between the logo and the text */
+  object-fit: contain;
+}
+
+.footer-content {
+  width: 70%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 20px;
+}
+
+.footer-section {
+  margin-bottom: 20px;
+}
+
+.footer-section h1,
+.footer-section h2 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid white;
+}
+
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 200px;
+  margin: 10px auto;
+}
+
+.contact-box a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-box p {
+  margin: 10px 0;
+}

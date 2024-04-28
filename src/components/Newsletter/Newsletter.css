@@ -1,0 +1,65 @@
+.newsletter {
+    margin : 120px auto 100px auto;
+    width: 80%;
+    border-radius: 20px;
+    height: 50vh;
+    background: linear-gradient(to right, #583fbb, #b856af, #d86479);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px 80px;
+    box-sizing: border-box;
+   }
+
+.newsletter h1{
+    font-size: 5em;
+    font-weight: 600;
+    margin: 20px auto;
+}
+
+.newsletter p{
+    font-size: 1.5em;
+    margin: 10px auto 20px auto;
+    /* margin-bottom: 20px; */
+}
+
+   .input-submit-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+   }
+   
+   .email-input-field {
+    flex-grow: 1;
+    background-color: white;
+    padding: auto auto;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    margin-right: 40px;
+    width: 70%; 
+    color: rgba(128, 128, 128, 0.733); 
+    border-color: none;
+}
+
+   
+   .submit-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #b238d7;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    max-width: 120px;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
+   }
+   

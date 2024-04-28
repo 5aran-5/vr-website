@@ -1,0 +1,18 @@
+/* .HomePage {
+    background-image: linear-gradient(to right, #12041d, #392b73, #583fbb, #691d3e, #b856af);
+    min-height: 100vh; 
+    Ensure the gradient covers the full height of the viewport
+    background-size: cover; 
+    Cover the entire element
+    background-repeat: no-repeat; 
+    Prevent the gradient from repeating
+} */
+
+.HomePage{
+    background-color: #12041d;
+}
+
+.content-container {
+    width: 90%;
+    margin: 0 auto;
+}

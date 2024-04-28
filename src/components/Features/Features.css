@@ -1,0 +1,158 @@
+/* Features.css */
+.features {
+  /* Add any styles specific to the features section */
+  padding: 50px 0;
+}
+
+.feature-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Adjust the gap between feature cards as needed */
+  animation: fadeIn 1s ease-out forwards; /* Add fade-in animation */
+}
+
+.feature-card {
+  height: 80vh;
+  display: flex;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 150px;
+  gap: 20px; /* Adjust the gap between the image and the content */
+  animation: slideIn 1s ease-out forwards; /* Add slide-in animation */
+  opacity: 0; /* Initially hidden */
+  transform: translateY(50px); /* Initially moved down */
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.feature-card.animate {
+  opacity: 1; /* Fully visible */
+  transform: translateY(0); /* Moved to original position */
+}
+
+.feature-card.even {
+  flex-direction: row; /* For even cards, the image is on the left */
+}
+
+.feature-card.odd {
+  flex-direction: row-reverse; /* For odd cards, the image is on the right */
+}
+
+.feature-image {
+  width: 40%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  animation: imageFadeIn 1s ease-out forwards; /* Add fade-in animation for images */
+}
+
+.feature-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; /* This ensures the image covers the entire div, cropping if necessary */
+  border-radius: 5px;
+}
+
+.feature-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 50px;
+  padding-right: 20px;
+  width: 60%;
+  height: 90%;
+  color: white;
+  animation: contentFadeIn 1s ease-out forwards; /* Add fade-in animation for content */
+}
+
+.feature-content h1,
+.feature-content p {
+  margin: 0; /* Remove default margins */
+}
+
+.feature-content h1 {
+  font-size: 6em;
+  animation: titleSlideIn 1s ease-out forwards; /* Add slide-in animation for titles */
+}
+
+.feature-content h1 .last-word {
+  color: #b238d7;
+}
+
+.feature-content p {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+.features-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #d86479, #b856af, #583fbb);
+  font-size: 1.2em;
+  font-weight: 700;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  cursor: pointer;
+  max-width: 120px;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 20px),
+    calc(100% - 20px) 100%,
+    0 100%
+  );
+  transition: transform 0.3s ease; /* Add transition for transform */
+}
+
+.features-button:hover {
+  transform: scale(1.05); /* Slightly scale up the button on hover */
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes imageFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes contentFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes titleSlideIn {
+  from {
+    transform: translateX(-100px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

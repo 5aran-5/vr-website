@@ -1,0 +1,117 @@
+/* Card.css */
+.card {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    width: 30%;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease; /* Add transition for smooth scaling */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Scale up the card on hover */
+}
+
+.card-left {
+    flex: 1; 
+}
+
+.card-left img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card-right {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-right h3 {
+    color: white;
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+.card-right button {
+    background: linear-gradient(to right,#d86479, #b856af, #583fbb);
+    font-size: 1.2em; 
+    font-weight: 300; 
+    color: white;
+    border: none;
+    padding: 15px 30px; 
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.Card-button{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background: linear-gradient(to right, #d86479, #b856af, #583fbb);
+    font-size: 1.2em;
+    font-weight: 600;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    max-width: 120px;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
+}
+
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes colorChange {
+    from {
+        color: #b238d7;
+    }
+    to {
+        color: #583fbb;
+    }
+}
+
+@keyframes cardsSlideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes cardFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
